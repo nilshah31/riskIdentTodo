@@ -1,0 +1,11 @@
+{
+	"port": "8001",
+	"dev": {
+		"secret_key": "KuYX2BYtBjjxVe1M4JbN"
+	},
+	"prod": {},
+	"db": {
+		"db_url": "mongodb://127.0.0.1",
+		"db_name": ""
+	}
+}
