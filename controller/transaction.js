@@ -14,23 +14,23 @@ function findTransaction(id, currentNode, confidenceLevel) {
       result;
 
   if (id == currentNode.id) {
+      currentNode['connectionInfo'] = undefined;
       return currentNode;
   } else {
       // Use a for loop instead of forEach to avoid nested functions
       // Otherwise "return" will not work properly
-      if(currentNode.children){
-        for (i = 0; i < currentNode.children.length; i += 1) {
+      
+        for (i = 0; i < currentNode.children.length || 0; i += 1) {
           currentChild = currentNode.children[i];
 
           // Search in the current child
           result = findTransaction(id, currentChild, confidenceLevel);
-
           // Return the result if the node has been found
           if (result !== false) {
               return result;
           }
         }
-      }
+      
       // The node has not been found and we have no more options
       return false;
   }
