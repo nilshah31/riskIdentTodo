@@ -20,4 +20,4 @@ app.use('/*',(req,res) => {
     message    :"Api Not found"
   });  
 });
-app.listen(config.port, () => console.log(`Application Running on the Port : ${config.port}!`))
+app.listen(process.env.PORT || config.port, () => console.log(`Application Running on the Port : ${config.port}!`))
