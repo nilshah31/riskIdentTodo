@@ -40,7 +40,7 @@ function findTransaction(tree, nodeId) {
       if (desiredNode) return desiredNode
     }
   }
-  return false
+  return errorCodes.NOT_FOUND;
 }
 
 function addCombinedConnectionInfo(allTranscations){
