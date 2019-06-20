@@ -1,4 +1,4 @@
-# riskIdentTodo (http://riskident.herokuapp.com)
+# riskIdentTodo (https://riskident.herokuapp.com)
 Risk Ident Todo
 
 ## Installation
