@@ -5,6 +5,6 @@ module.exports = {
   },
   NOT_FOUND : {
     code : 'not_found',
-    body : 'Required transcation could not found, please try again with valid transcation ID'
+    body : 'Required transcation could not found, please try again with valid transcation ID or confidence level'
   }
 }
